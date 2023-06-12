@@ -1,0 +1,22 @@
+section#main
+	.container
+		.content
+			+imgs('general-img general-img-main-1', 'img/backs/ellipse.png', 'Эллипс')
+			+imgs('general-img general-img-main-2', 'img/backs/ellipse.png', 'Эллипс')
+			h1.main-title Чтобы мы в дальнейшем могли отправить вам ссылку на мастер-класс или курс, 
+				span вам необходимо подтвердить свой e-mail
+			p.main-text Все что вам необходимо сделать - зайти прямо сейчас в свой почтовый ящик, с которого вы регистрировались, найти письмо с просьбой подтвердить подписку и кликнуть на ссылку или кнопку 
+				span «ПОДТВЕРДИТЬ ПОДПИСКУ»
+			.posts
+				a.post-link(href="https://mail.yandex.ru/" target="_blank")
+					img.post-icon(src=path+"img/icons/yandex.png" alt="Яндекс")
+				a.post-link(href="https://e.mail.ru/messages/inbox/" target="_blank")
+					img.post-icon(src=path+"img/icons/mailru.png" alt="Mailru")
+				a.post-link(href="https://mail.google.com/mail" target="_blank")
+					img.post-icon(src=path+"img/icons/gmail.png" alt="Gmail")
+				a.post-link(href="https://mail.yahoo.com/" target="_blank")
+					img.post-icon(src=path+"img/icons/yahoo.png" alt="Yahoo")
+			h2.main-subtitle P.S. Если вдруг не нашли письмо в своем почтовом ящике - загляните в папку 
+				span СПАМ 
+				|  или 
+				span Промоакции

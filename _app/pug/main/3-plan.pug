@@ -1,0 +1,32 @@
+mixin l(n, span, p)
+	.lesson(class="lesson-"+n)
+		.lesson-number
+			h4.lesson-number-title=n
+				small урок
+		.lesson-info
+			p.lesson-info-text
+				span=span
+				!=p
+
+mixin pi(n, p)
+	.plan-item(class="plan-item-"+n)
+		+imgs('plan-item-'+n, 'img/icons/plan-item-'+n+'.png', p)
+		p.plan-item-text=p
+
+section#plan
+	.container
+		.plan-wrapper
+			.row
+				.col-md-4
+					+gt('general-title-plan', 'Программа курса:')
+					+l('1', 'Формирование судьбы.', 'Что влияет на формирование судьбы человека.')
+					+l('2', 'Запреты и разрешения.', '12 основных родительских запретов. 6 разрешений родителей.')
+					+l('3', 'Принятые решения.', 'Принятые в детском возрасте решения. Как это влияет на нашу жизнь?')
+					+l('4', 'Практика ', 'Работа над собой. <br class="mob-none">Обратная связь.')
+				.col-md-4
+					+imgs('plan-img', 'img/images/plan.png', 'Программа курса')
+					+b('button-wrapper-center','button-up', href, 'МНЕ ЭТО ИНТЕРЕСНО')
+				.col-md-4
+					+pi('1', 'Курс состоит из 4 занятий и рассчитан на 2 недели, по 2 занятия в неделю.')
+					+pi('2', '3 занятие в формате видео-уроков, заключительное занятие в формате онлайн-встречи в Zoom.')
+					+pi('3', 'Все уроки включают в себя 80% практики, что приводит каждого к 100% результату.')

@@ -1,0 +1,54 @@
+-var path = '';
+-var head_url = 'https://landings.gaberstein.de/shaping-destiny/';
+-var head_title = '«Формирование судьбы»';
+-var head_description = 'Бесплатный онлайн мини-курс Юлии Габерштейн';
+//-var head_img = 'img/banner.jpg';
+-var styles = path+'css/styles.min.css';
+-var fav_ap = path+'favicon.svg';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+-var libs = path+'js/libs.min.js';
+-var scripts = path+'js/scripts.min.js';
+-var noref = true
+-var action = 'https://a57988s1.autoweboffice.ru/?r=personal/newsletter/sub/add&id=41261&lg=ru&Contact[id_newsletter]=';
+-var group = '1';
+-var formId = '1';
+-var formVc = '229457857';
+//- -var footer_title = true
+//- -var oferta = 'https://mastervision.su/oferta.docx'
+//- -var ak = true
+-var href = '#Modal';
+-var dat = true
+
+mixin b(wcl,cl, href, p, target, id)
+	.button-wrapper(class=wcl)
+		a.button(class=cl href!=href target=target id=id)
+			span=p
+mixin imgs(cl, src, alt)
+	img(class=cl src=path+src alt=alt)
+mixin gt(cl, h3, sp, sm)
+	h3.general-title(class=cl)
+		=h3
+		if sp
+			span=sp
+		if sm
+			small=sm
+
+doctype html
+html(lang="ru")
+	head
+		include pug/head
+		//- include pug/scripts/head_scripts
+	body
+		//- include pug/scripts/body_top_scripts
+		.wrapper
+			include pug/main/1-main
+			include pug/main/2-if
+			include pug/main/3-plan
+			include pug/main/5-get
+			include pug/main/6-author
+			include pug/main/7-revs
+		include pug/base/2-footer
+		include pug/main/8-modals
+		include pug/base/3-scripts
+		//- include pug/scripts/body_bottom_scripts

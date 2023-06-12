@@ -1,0 +1,20 @@
+section#main
+	.container
+		.content
+			.row
+				.col-md-6
+					//- +imgs('main-logo', 'img/images/logo.png', 'Лого')
+					p.main-pre Бесплатный онлайн&nbsp;мини-курс
+					h1.main-title Формирование судьбы
+					h2.main-subtitle Перепиши свою судьбу на лучшую и желанную с помощью несложных техник и инструментов.
+					+b('','button-up', href, 'Зарегистрироваться')
+				.col-md-6
+					+imgs('main-img mob-none', 'img/images/yliya-main-0.png', 'Юлия Габерштейн')
+					+imgs('main-img d-none', 'img/images/yliya-main.png', 'Юлия Габерштейн')
+section#video
+	.container
+		+gt('', 'Видео-приглашение от Юлии Габерштейн')
+		.video-wrapper.video-wrapper-video(data-youtube='V9kpfqM4wFk')
+			+imgs('', 'img/images/video.jpg', 'Видео')
+				//- iframe(src='https://youtube.com/embed/b8JaheTk3rI')
+			.play-button

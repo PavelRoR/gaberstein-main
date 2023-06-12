@@ -1,0 +1,82 @@
+// .fancybox-bg
+// 	// background-color #fff
+.modal
+	display none
+	cursor auto !important
+	background-color: transparent
+	width 100%
+	max-width 1440px
+	overflow hidden
+	@media screen and (max-width 386px)
+		padding 15px
+	&-wrapper
+		width 100%
+		max-width 800px
+		padding 30px
+		background-color #fff
+		box-shadow: 0px 7px 13.76px 2.24px rgba(0, 0, 0, 0.08);
+		border-radius: 10px
+		position relative
+		margin 0 auto
+		background: #fff url(../img/backs/plan.png) no-repeat center
+		@media screen and (max-width 560px)
+			padding 20px
+		@media screen and (max-width 386px)
+			padding 30px 10px 10px
+		&:before
+			content: ''
+			display block
+			position absolute
+			width 90%
+			height: 50px
+			background-color: #fff
+			bottom: -10px
+			left 0
+			right 0
+			margin 0 auto
+			border-radius: 10px
+			box-shadow: 0px 7px 13.76px 2.24px rgba(0, 0, 0, 0.08);
+			z-index -1
+	&-black
+		background-color #fff
+	h4
+		font-family: ACC
+		font-size: 30px
+		// font-weight: bold
+		text-align center
+		margin-bottom: 35px
+		@media screen and (max-width 386px)
+			&.cookies-modal-title
+				font-size: 24px
+				margin-bottom: 20px
+		&.modal-title
+			font-size: 42px
+			color #5e5e5e
+			text-transform uppercase
+			margin-bottom: 20px
+	h5
+		font-size: 20px
+		font-weight: bold
+		margin:30px 0 20px
+	h6
+		font-size: 18px
+		margin: 30px 0 20px
+	p
+		margin-bottom: 10px
+		a
+			display inline-block
+			margin 0 5px
+			text-decoration underline
+			&:focus
+				color: #000
+			&:hover
+				color #000
+				text-decoration none
+	ul
+		margin: 0 0 20px 25px
+.fancybox-slide--html .fancybox-close-small
+	color red
+	opacity 1
+	transition: all .5s ease
+	outline: 0
+	padding 0

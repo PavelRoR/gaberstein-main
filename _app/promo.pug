@@ -1,0 +1,49 @@
+-var path = '../';
+-var head_url = 'https://landings.gaberstein.de/shaping-destiny/promo/';
+-var head_title = 'Подпишитесь в Телеграм';
+//- -var head_description = 'Бесплатный онлайн мини-курс Юлии Габерштейн';
+//-var head_img = 'img/banner.jpg';
+-var styles = path+'css/promo.min.css';
+-var fav_ap = path+'favicon.svg';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+-var libs = path+'js/confirm-libs.min.js';
+-var scripts = path+'js/confirm.min.js';
+//- -var noref = true
+//- -var action = '';
+//- -var group = '';
+//- -var formId = '';
+//- -var formVc = '';
+//- -var footer_title = true
+//- -var oferta = 'https://mastervision.su/oferta.docx'
+//- -var ak = true
+//- -var href = '#Modal';
+
+mixin b(wcl,cl, href, p, target, id)
+	.button-wrapper(class=wcl)
+		a.button(class=cl href!=href target=target id=id)
+			span=p
+mixin imgs(cl, src, alt)
+	img(class=cl src=path+src alt=alt)
+mixin gt(cl, h3, sp, sm)
+	h3.general-title(class=cl)
+		=h3
+		if sp
+			span=sp
+		if sm
+			small=sm
+
+doctype html
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		.wrapper
+			include pug/promo/1-main
+		include pug/base/2-footer
+		include pug/confirm/2-modals
+		include pug/base/3-scripts
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts
