@@ -24,7 +24,7 @@ mixin b(wcl,cl, href, p, target, id)
 	.button-wrapper(class=wcl)
 		a.button(class=cl href!=href target=target id=id)=p
 mixin imgs(cl, src, alt)
-	img(class=cl src=path+src alt=alt)
+	img(class=cl src=path+src alt!=alt)
 mixin gt(cl, h3)
 	h3.general-title(class=cl)=h3
 
