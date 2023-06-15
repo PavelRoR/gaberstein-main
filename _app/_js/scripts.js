@@ -169,5 +169,18 @@ $(document).ready(function () {
     });
     /* Видео */
     $(".video-wrapper-revs img, .play-button-rev").click(imToVideo());
+
+
+    // Высоты блоков
+        var maxHeight = 0;
+    var highestElement = {};
+    $('.how-item').each(function() {
+        var thisHeight = $(this).height();
+        if (thisHeight>maxHeight) {
+            maxHeight = thisHeight;
+            highestElement = $(this);
+        }
+        $('.how-item').css('height', highestElement+'px')
+    });
     /*Конец документа*/
 });

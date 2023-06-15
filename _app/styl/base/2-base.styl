@@ -10,11 +10,14 @@ body
 	background-color #fff
 	line-height: 1.56
 // .container
-// 	@media screen and (min-width 1440px)
+// 	@media (min-width: 768px)
+// 		width: 750px;
+// 	@media (min-width: 992px)
+// 		width: 970px;
+// 	@media (min-width: 1200px)
+// 		// width: 1170px;
 // 		max-width 1440px
 // 		width 98%
-	// @media screen and (max-width 1229px)
-	// 	width 98%
 .wrapper
 	overflow hidden
 .content
@@ -205,21 +208,21 @@ footer
 			text-align center
 .general-img
 	position absolute
-.general-list
-	li
-		position relative
-		list-style: none
-		min-height 50px
-		padding-left: 75px
-		margin-bottom: 15px
-		background: url(../img/icons/check.png) no-repeat top left
-		display flex
-		align-items: center
-		justify-content: flex-start
-		@media screen and (max-width 386px)
-			padding-left: 40px
-			background-size: 30px
-			min-height 30px
+// .general-list
+// 	li
+// 		position relative
+// 		list-style: none
+// 		min-height 50px
+// 		padding-left: 75px
+// 		margin-bottom: 15px
+// 		background: url(../img/icons/check.png) no-repeat top left
+// 		display flex
+// 		align-items: center
+// 		justify-content: flex-start
+// 		@media screen and (max-width 386px)
+// 			padding-left: 40px
+// 			background-size: 30px
+// 			min-height 30px
 .mob-none
 	@media screen and (max-width 991px)
 		display none
@@ -227,3 +230,9 @@ footer
 	display none
 	@media screen and (max-width 991px)
 		display block
+p
+	margin-bottom: 20px
+	&:last-of-type
+		margin-bottom: 0
+	span
+		font-weight: 600

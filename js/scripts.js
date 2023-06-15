@@ -169,5 +169,6 @@ $(document).ready(function () {
     });
     /* Видео */
     $(".video-wrapper-revs img, .play-button-rev").click(imToVideo());
+
     /*Конец документа*/
 });
