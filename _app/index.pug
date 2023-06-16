@@ -27,7 +27,7 @@ mixin b(wcl,cl, href, p, target, id)
 mixin imgs(cl, src, alt)
 	img(class=cl src=path+src alt!=alt)
 mixin gt(cl, h3)
-	h3.general-title(class=cl)=h3
+	h3.general-title(class=cl)!=h3
 
 doctype html
 html(lang="ru")
