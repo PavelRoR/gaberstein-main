@@ -6,10 +6,30 @@
 	margin 30px auto
 	position relative
 	padding 30px 230px 30px 30px
+	@media screen and (max-width 1199px)
+		overflow hidden
+		padding 30px 180px 30px 30px
+	@media screen and (max-width 991px)
+		overflow: visible
+		padding 30px 230px 30px 20px
+		margin-top: 100px
+	@media screen and (max-width 560px)
+		padding 30px 20px
+		margin-top: 0
 	&-img
 		position absolute
 		bottom: 0
 		right 5px
+		@media screen and (max-width 1199px)
+			right -50px
+		@media screen and (max-width 991px)
+			right 0
+		@media screen and (max-width 560px)
+			display block
+			margin 20px auto -30px
+			width 100%
+			max-width 340px
+			position: static
 	&-list
 		position relative
 		z-index 20
@@ -28,20 +48,38 @@
 	flex-direction: row
 	align-items: flex-start
 	justify-content: space-between
+	@media screen and (max-width 991px)
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		// max-width 100%
 	&-title
 		font-family: ACC
 		font-size: 50px
 		color #5E5E5E
 		line-height: 58px
+		@media screen and (max-width 991px)
+			margin-top: 30px
 .format
 	display flex
 	flex-direction: column
 	width 100%
 	max-width 260px
 	flex-basis: 25%
+	text-align center
+	@media screen and (max-width 991px)
+		flex-basis: 50%
+		max-width 500px
+		flex-wrap: wrap
 	&-text
 		font-weight: 500
 		text-align right
+		@media screen and (max-width 1199px)
+			font-size: 16px
+		@media screen and (max-width 991px)
+			font-size: 18px
+			text-align center
+			margin 25px 0 30px
 	&-item
 		margin-bottom: 10px
 		background-image: linear-gradient(90deg, #D7EEAC 0%, rgba(215, 238, 172, 0.45) 37.66%, rgba(215, 238, 172, 0.71) 96.01%);
@@ -59,10 +97,16 @@
 			font-size: 20px
 			font-weight: 600
 			text-transform uppercase
+			@media screen and (max-width 1199px)
+				font-size: 17px
 	&:first-of-type
 		width 100%
 		max-width 216px
 		align-self: center
 		order 1
+		@media screen and (max-width 991px)
+			order: 0
 	&:nth-of-type(2)
 		flex-direction: column-reverse
+		@media screen and (max-width 991px)
+			flex-direction: column

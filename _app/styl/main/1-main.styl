@@ -1,18 +1,19 @@
-// #main
-// 	background-image: url(../img/backs/main.png)
-// 	background-repeat: no-repeat
-// 	background-position: center top
-// 	background-size: contain
-// 	width 100%
-// 	max-width 1440px
-// 	margin 0 auto
-// 	overflow hidden
+#main
+	// position relative
+	// z-index 1000
+	@media screen and (max-width 991px)
+		text-align center
 .content-main
 	padding 155px 0 0
 	background-image: url(../img/backs/main.png)
 	background-repeat: no-repeat
 	background-position: left 50px bottom
+	@media screen and (max-width 991px)
+		padding 120px 0 0
 	// background-size: contain
+	@media screen and (max-width 386px)
+		background-image: none
+		padding 90px 0 0
 .pink-lines
 	position absolute
 	top: 0
@@ -23,9 +24,18 @@
 	align-items: center
 	justify-content: space-between
 	z-index -1
+	@media screen and (max-width 560px)
+		width 280px
+	@media screen and (max-width 386px)
+		margin 0 auto
+		left 0
+		right 0
+		opacity .3
 .pink-line
 	width 120px
 	height: 100%
+	@media screen and (max-width 991px)
+		width 80px
 	&-1
 		background-color: rgba(175, 90, 217, 0.3);
 	&-2
@@ -39,6 +49,8 @@
 		line-height: 29px;
 		text-transform: uppercase;
 		margin 0
+		@media screen and (max-width 560px)
+			font-size: 20px
 	p&-pre-2
 		display flex
 		padding 10px 15px
@@ -54,15 +66,32 @@
 		align-items: center
 		width 100%
 		max-width 321px
+		@media screen and (max-width 991px)
+			margin 5px auto 30px
+			text-align center
+		@media screen and (max-width 560px)
+			font-size: 16px
+			justify-content: center
+			max-width 290px
+			margin 5px auto 20px
 	&-title
 		font-family: ACC
 		font-size: 110px;
 		line-height: 110px;
 		color: #5E5E5E;
 		text-transform uppercase
+		@media screen and (max-width 560px)
+			font-size: 70px
+			line-height: 1.4
+		@media screen and (max-width 386px)
+			font-size: 50px
+			line-height: 1.2
 	&-subtitle
 		font-size: 20px
 		margin-top: 25px
+		@media screen and (max-width 560px)
+			font-size: 18px
+			margin-top: 15px
 	&-img
 		// position relative
 		// padding-top: 90%
@@ -74,3 +103,9 @@
 		z-index 0
 		@media screen and (max-width 1199px)
 			left -80px
+		@media screen and (max-width 991px)
+			// margin-top: 0
+			left 0
+			width 100%
+			max-width 926px
+			margin 0 auto

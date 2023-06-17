@@ -71,7 +71,7 @@ footer
 		height 100%
 		display block
 		background-color #282828;
-		border-radius: 40px;
+		// border-radius: 40px;
 		border: 0
 		top 0
 		left 0
@@ -189,10 +189,9 @@ footer
 	@media screen and (max-width 991px)
 		font-size: 40px
 	@media screen and (max-width 560px)
-		font-size: 32px
 		margin-bottom: 30px
 	@media screen and (max-width 386px)
-		font-size: 28px
+		font-size: 32px
 	span
 		color #B0CBAA
 	small
@@ -230,9 +229,11 @@ footer
 	display none
 	@media screen and (max-width 991px)
 		display block
-p
+.general-text
 	margin-bottom: 20px
 	&:last-of-type
 		margin-bottom: 0
 	span
 		font-weight: 600
+	@media screen and (max-width 991px)
+		text-align center

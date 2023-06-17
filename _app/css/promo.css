@@ -123,7 +123,6 @@ footer {
   height: 100%;
   display: block;
   background-color: #282828;
-  border-radius: 40px;
   border: 0;
   top: 0;
   left: 0;
@@ -284,13 +283,12 @@ footer {
 }
 @media screen and (max-width: 560px) {
   .general-title {
-    font-size: 32px;
     margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 386px) {
   .general-title {
-    font-size: 28px;
+    font-size: 32px;
   }
 }
 .general-title span {
@@ -334,14 +332,19 @@ footer {
     display: block;
   }
 }
-p {
+.general-text {
   margin-bottom: 20px;
 }
-p:last-of-type {
+.general-text:last-of-type {
   margin-bottom: 0;
 }
-p span {
+.general-text span {
   font-weight: 600;
+}
+@media screen and (max-width: 991px) {
+  .general-text {
+    text-align: center;
+  }
 }
 /* Main */
 #main {

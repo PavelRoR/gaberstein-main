@@ -1,11 +1,17 @@
 #meet
 	padding 60px 0 80px
+	@media screen and (max-width 1199px)
+		padding 0 0 80px
 .blue-container
 	background-image: radial-gradient(50% 50% at 50% 50%, #FCFBFC 0%, #FCF4FF 100%);
 	border-radius: 40px;
 	padding 50px
 	position relative
 	overflow hidden
+	@media screen and (max-width 991px)
+		padding 40px 30px 0
+	@media screen and (max-width 386px)
+		border-radius: 20px
 	&:before
 	&:after
 		content: ''
@@ -17,13 +23,20 @@
 		margin 0 auto
 		left 0
 		right 0
+		@media screen and (max-width 991px)
+			width 60px
+			height: 60px
 	&:before
 		background-image: linear-gradient(to top, #fff 0%, #fff 50%, rgba(#fff,0) 50%)
 		top -61px
+		@media screen and (max-width 991px)
+			top -30px
 	&:after
 		background-image: linear-gradient(to bottom, #fff 0%, #fff 50%, rgba(#fff,0) 50%)
 		top auto
 		bottom -61px
+		@media screen and (max-width 991px)
+			bottom: -30px
 .meet-item
 	display flex
 	flex-direction: row
@@ -33,6 +46,8 @@
 	margin-bottom: 15px
 	position relative
 	z-index 20
+	@media screen and (max-width 386px)
+		flex-direction: column
 	&:last-of-type
 		margin-bottom: 0
 	&-title
@@ -51,6 +66,8 @@
 		// height: 58px;
 		margin-right: 20px
 		line-height: 58px
+		@media screen and (max-width 386px)
+			margin 0 0 10px
 	&-text
 		display block
 .meet-img
@@ -58,3 +75,9 @@
 	bottom: -50px
 	left 40%
 	z-index 0
+	@media screen and (max-width 991px)
+		position: static
+		margin 30px auto 0
+		display block
+		width 100%
+		max-width 730px
