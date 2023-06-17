@@ -34,9 +34,10 @@ html(lang="ru")
 	head
 		include pug/head
 		//- include pug/scripts/head_scripts
-	body
+	body#body
 		//- include pug/scripts/body_top_scripts
 		.wrapper
+			include pug/base/1-header
 			include pug/main/1-main
 			include pug/main/2-how
 			include pug/main/3-meet

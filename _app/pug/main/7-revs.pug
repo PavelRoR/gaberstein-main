@@ -1,16 +1,43 @@
 section#revs
 	.container
 		+gt('', 'посмотрите на отзывы и результаты моих учеников')
-	.revs-slider-text
-		each n in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21]
-			a.text-rev-link(href=path+"img/revs/text-"+n+".jpg" data-fancybox="text-revs"): img(src=path+"img/revs/text-"+n+".min.jpg", alt="Отзыв "+n).text-rev-img
-		//- .video-revs-arrows-2
+		.row
+			.col-md-6
+				a.text-rev-link(href=path+"img/revs/text-1.jpg" data-fancybox="text-revs"): img(src=path+"img/revs/text-1.jpg", alt="Отзыв 1").text-rev-img
+				a.text-rev-link(href=path+"img/revs/text-2.jpg" data-fancybox="text-revs"): img(src=path+"img/revs/text-2.jpg", alt="Отзыв 2").text-rev-img
+			.col-md-6
+				a.text-rev-link(href=path+"img/revs/text-3.jpg" data-fancybox="text-revs"): img(src=path+"img/revs/text-3.jpg", alt="Отзыв 3").text-rev-img
+				a.text-rev-link(href=path+"img/revs/text-4.jpg" data-fancybox="text-revs"): img(src=path+"img/revs/text-4.jpg", alt="Отзыв 4").text-rev-img
+		+b('button-wrapper-center', '', 'https://www.instagram.com/stories/highlights/17864858440617746/', 'Еще больше отзывов', '_blank')
+section#revs-video
 	.container
 		+gt('', 'Видео-отзывы')
-	.revs-slider
-		each yt, n in {1: 'yR5cy7ydcUg', 2: 'keD_bIRvDQw', 3: 'SgcGSrwr-JM', 4: 'HMI0q_V67bk', 5: 'GAPMlE_3L0c'}
-			div
-				.video-wrapper.video-wrapper-revs(data-youtube=yt data-img=path+"img/revs/video-"+n+".jpg")
-					img(src=path+"img/revs/video-"+n+".jpg", alt="Отзыв "+n)
+		.row
+			.col-md-6
+				.video-wrapper.video-wrapper-revs(data-youtube='yR5cy7ydcUg' data-img=path+"img/revs/video-1.jpg")
+					img(src=path+"img/revs/video-1.jpg", alt="Отзыв 1")
 					.play-button.play-button-rev
+				.video-wrapper.video-wrapper-revs(data-youtube='keD_bIRvDQw' data-img=path+"img/revs/video-2.jpg")
+					img(src=path+"img/revs/video-2.jpg", alt="Отзыв 2")
+					.play-button.play-button-rev
+			.col-md-6
+				.video-wrapper.video-wrapper-revs(data-youtube='SgcGSrwr-JM' data-img=path+"img/revs/video-3.jpg")
+					img(src=path+"img/revs/video-3.jpg", alt="Отзыв 3")
+					.play-button.play-button-rev
+				.video-wrapper.video-wrapper-revs(data-youtube='HMI0q_V67bk' data-img=path+"img/revs/video-4.jpg")
+					img(src=path+"img/revs/video-4.jpg", alt="Отзыв 4")
+					.play-button.play-button-rev
+		+b('button-wrapper-center', '', '', 'Еще больше отзывов', '_blank')
+	//- .revs-slider-text
+	//- 	each n in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21]
+	//- 		a.text-rev-link(href=path+"img/revs/text-"+n+".jpg" data-fancybox="text-revs"): img(src=path+"img/revs/text-"+n+".min.jpg", alt="Отзыв "+n).text-rev-img
+	//- 	//- .video-revs-arrows-2
+	//- .container#revs-video
+	//- 	+gt('', 'Видео-отзывы')
+	//- .revs-slider
+	//- 	each yt, n in {1: 'yR5cy7ydcUg', 2: 'keD_bIRvDQw', 3: 'SgcGSrwr-JM', 4: 'HMI0q_V67bk', 5: 'GAPMlE_3L0c'}
+	//- 		div
+	//- 			.video-wrapper.video-wrapper-revs(data-youtube=yt data-img=path+"img/revs/video-"+n+".jpg")
+	//- 				img(src=path+"img/revs/video-"+n+".jpg", alt="Отзыв "+n)
+	//- 				.play-button.play-button-rev
 		//- .video-revs-arrows-1

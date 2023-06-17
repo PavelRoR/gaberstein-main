@@ -1,12 +1,27 @@
 header
 	overflow hidden
 	padding 20px 0
-	margin-bottom: 40px
+	// margin-bottom: 40px
+	position absolute
+	top 0
+	left 0
+	z-index 999
+	transition: all .3s ease-in-out
 	.&-row
 		display flex
 		align-items: center
 		justify-content: space-between
-		margin-bottom: 20px
+		transition: all .3s ease-in-out
+		&:first-of-type
+			margin-bottom: 20px
+	&.fixed
+		position: fixed
+		top: 0
+		left 0
+		background-color rgba(#fff,.95)
+		padding 10px
+		.header-row:first-of-type
+			margin-bottom: 10px
 // .header-logo
 // 	float left
 // .contacts
@@ -31,15 +46,26 @@ header
 		background-position: -45px 0
 	&-inst
 		background-position: -90px 0
+	&-fb
+		background-position: -135px 0
+	&-tt
+		background-position: -180px 0
 .main-menu
 	display flex
 	flex-direction: row
 	align-items: flex-start
-	justify-content: space-around
+	justify-content: space-between
 	flex-wrap: wrap
 	list-style none
 	width 100%
+	position relative
+	z-index 99
+	@media screen and (max-width 1199px)
+		justify-content: flex-start
 	&-item
+		margin-right 10px
+		&:last-child
+			margin-right: 0
 		a
 			display block
 			font-size: 14px
@@ -49,5 +75,6 @@ header
 				color #2E2E2E
 				text-decoration none
 			&:hover
+			&.active
 				color #8840AB
 				text-decoration none

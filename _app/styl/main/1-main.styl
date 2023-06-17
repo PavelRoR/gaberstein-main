@@ -1,5 +1,4 @@
 // #main
-// 	padding 0 0 155px
 // 	background-image: url(../img/backs/main.png)
 // 	background-repeat: no-repeat
 // 	background-position: center top
@@ -9,6 +8,7 @@
 // 	margin 0 auto
 // 	overflow hidden
 .content-main
+	padding 155px 0 0
 	background-image: url(../img/backs/main.png)
 	background-repeat: no-repeat
 	background-position: left 50px bottom
@@ -38,7 +38,8 @@
 		font-size: 25px;
 		line-height: 29px;
 		text-transform: uppercase;
-	&-pre-2
+		margin 0
+	p&-pre-2
 		display flex
 		padding 10px 15px
 		background: linear-gradient(90deg, #D7EEAC 0%, rgba(215, 238, 172, 0.45) 37.66%, rgba(215, 238, 172, 0.71) 96.01%);
@@ -71,3 +72,5 @@
 		left -155px
 		margin-top: -155px
 		z-index 0
+		@media screen and (max-width 1199px)
+			left -80px
