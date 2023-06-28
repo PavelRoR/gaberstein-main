@@ -220,12 +220,12 @@ $(document).ready(function () {
     //     imToVideo();
     // });
     /* Видео */
-    $(".video-wrapper-revs").click(function () {
+    $(".video-wrapper").click(function () {
        
        
-        $(".video-wrapper-revs iframe").each(function(){
+        $(".video-wrapper iframe").each(function(){
             var l = $(this).parent().attr('data-img');
-            $(this).parent().html('<img src="' + l + '" alt="Видео отзыв"><div class="play-button play-button-rev"></div>');
+            $(this).parent().html('<img src="' + l + '" alt=""><div class="play-button play-button-rev"></div>');
          })
          var a = $(this).attr("data-youtube");
      

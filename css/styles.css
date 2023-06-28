@@ -1080,7 +1080,49 @@ p.main-pre-2 {
     margin: 0 auto;
   }
 }
-/* If */
+/* Video */
+#video {
+  padding: 90px 0 30px;
+}
+@media screen and (max-width: 991px) {
+  #video {
+    padding: 60px 0 0;
+  }
+}
+.video-list {
+  border-radius: 10px;
+  padding: 0 30px;
+  margin-top: 55px;
+}
+@media screen and (max-width: 1199px) {
+  .video-list {
+    margin-top: 25px;
+    padding: 0;
+  }
+}
+.video-list li {
+  list-style: none;
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+@media screen and (max-width: 560px) {
+  .video-list li {
+    margin-bottom: 10px;
+  }
+}
+.video-list li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 11px;
+  left: 0;
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  background-color: #e8cef5;
+}
+/* How */
 #how {
   padding: 80px 0 150px;
 }
@@ -1234,7 +1276,7 @@ p.main-pre-2 {
     margin-bottom: 10px;
   }
 }
-/* Themes */
+/* Meet */
 #meet {
   padding: 60px 0 80px;
 }
@@ -1377,7 +1419,7 @@ p.main-pre-2 {
     max-width: 730px;
   }
 }
-/* Get */
+/* For */
 .for-item {
   background: radial-gradient(50% 50% at 50% 50%, #fff 0%, #f4f4f4 100%);
   border-radius: 10px;
@@ -1589,7 +1631,7 @@ p.main-pre-2 {
             flex-direction: column;
   }
 }
-/* Author */
+/* Know */
 #know {
   padding: 90px 0;
 }
@@ -1680,6 +1722,26 @@ p.main-pre-2 {
   .bc-img {
     margin-top: 20px;
   }
+}
+/* Collage */
+#collage {
+  padding: 60px 0;
+}
+@media screen and (max-width: 991px) {
+  #collage {
+    padding: 0 0 60px;
+  }
+}
+@media screen and (max-width: 386px) {
+  #collage {
+    padding: 0 0 40px;
+  }
+}
+.collage-img {
+  display: block;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
 }
 /* Revs */
 #revs {
