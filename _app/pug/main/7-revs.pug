@@ -8,7 +8,9 @@ section#revs
 			.col-md-6
 				a.text-rev-link(href=path+"img/revs/text-3.jpg" data-fancybox="text-revs"): img(src=path+"img/revs/text-3.jpg", alt="Отзыв 3").text-rev-img
 				a.text-rev-link(href=path+"img/revs/text-4.jpg" data-fancybox="text-revs"): img(src=path+"img/revs/text-4.jpg", alt="Отзыв 4").text-rev-img
-		+b('button-wrapper-center', '', 'https://www.instagram.com/stories/highlights/17864858440617746/', 'Еще больше отзывов', '_blank')
+		h5.revs-subtitle Больше отзывов в&nbsp;моём
+			span.span-insta
+		+b('button-wrapper-center', '', 'https://www.instagram.com/stories/highlights/17919597065691819/', 'Смотреть отзывы', '_blank')
 section#revs-video
 	.container
 		+gt('', 'Видео-отзывы')
@@ -27,7 +29,9 @@ section#revs-video
 				.video-wrapper.video-wrapper-revs(data-youtube='HMI0q_V67bk' data-img=path+"img/revs/video-4.jpg")
 					img(src=path+"img/revs/video-4.jpg", alt="Отзыв 4")
 					.play-button.play-button-rev
-		+b('button-wrapper-center', '', '', 'Еще больше отзывов', '_blank')
+		h5.revs-subtitle Больше отзывов на&nbsp;моём
+			span.span-yt
+		+b('button-wrapper-center', '', 'https://www.youtube.com/@yuliyagaberstein9065', 'Смотреть отзывы', '_blank')
 	//- .revs-slider-text
 	//- 	each n in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21]
 	//- 		a.text-rev-link(href=path+"img/revs/text-"+n+".jpg" data-fancybox="text-revs"): img(src=path+"img/revs/text-"+n+".min.jpg", alt="Отзыв "+n).text-rev-img
